@@ -1,7 +1,7 @@
 require 'open-uri'
 require 'nokogiri'
 
-def cours_cryptomonnnaies(page_url)
+def stock_exchange_cours(page_url)
     doc = Nokogiri::HTML(open(page_url))
     cours = []
     el_tab = doc.css("#currencies-all tbody tr")
@@ -21,7 +21,6 @@ def cours_cryptomonnnaies(page_url)
         })
         puts cours
 
-
         puts "Patientez ..."
     end
 
@@ -30,7 +29,7 @@ def cours_cryptomonnnaies(page_url)
 end
 
 while 0 < 1 do
-    puts cours_cryptomonnnaies("https://coinmarketcap.com/all/views/all/")
+    puts stock_exchange_cours("https://coinmarketcap.com/all/views/all/")
     puts "PAUSE"
     sleep 3600
 end
