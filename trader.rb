@@ -21,10 +21,10 @@ def stock_exchange_cours(page_url)
         })
         puts cours
 
-        puts "Patientez ..."
+        puts "Please wait ..."
     end
 
-    puts "Résultat ...Tr"
+    puts "Résult is ...Tr"
     cours
 end
 
