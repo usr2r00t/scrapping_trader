@@ -5,7 +5,7 @@
 You must have `nokogiri` on your machine:
 
 ```shell
-gem install nokogiri
+$ gem install nokogiri
 ```
 
 ## How to launch 
@@ -13,5 +13,5 @@ gem install nokogiri
 Just type this in your Terminal:
 
 ```shell
-ruby fichier.rb
+$ ruby fichier.rb
 ```
